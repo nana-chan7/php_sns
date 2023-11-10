@@ -1,4 +1,3 @@
-// api/tweet/like.php
 <?php
 require_once "../../env.php";
 require_once "../../app/controllers/TweetController.php";
