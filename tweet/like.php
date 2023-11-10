@@ -1,6 +1,6 @@
 <?php
-require_once "../../env.php";
-require_once "../../app/controllers/TweetController.php";
+require_once "../env.php";
+require_once "../app/controllers/TweetController.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $controller = new TweetController();
