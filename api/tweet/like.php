@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $controller = new TweetController();
     $controller->like();
 } else {
-    // POST以外のメソッドのハンドリング
-    http_response_code(405); // Method Not Allowed
+    http_response_code(405); 
     echo json_encode(['error' => 'Method Not Allowed']);
 }
