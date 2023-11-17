@@ -1,7 +1,9 @@
 <div class="tweet-nav mb-3">
     <!-- TODO: usersのIDと tweetsのIDを送信 -->
     <form action="../tweet/like.php" method="POST">
+        <!-- ↑ Explanation: action="like.php" method="post -->
         <input type="hidden" name="user.id" value="<?= $user['id'] ?>">
+        <!-- ↑ Explanation: name="user_id" -->
         <input type="hidden" name="tweet_id" value="<?= $tweet['id'] ?>">
 
         <?php if (in_array($tweet['id'], $user_likes)) : ?>
@@ -13,3 +15,5 @@
         <?php endif ?>
     </form>
 </div>
+
+<!-- 2023-11-17 3.week9 試験問題解説 (↑ Explanation: ~)-->
